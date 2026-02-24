@@ -7,9 +7,9 @@ def get_random_word():
     word_list = response.json()  # converts the response to a Python list
     return word_list[0]          # grabs the first (only) word from the list
 
-print(get_random_word())
-
 chosen_word = get_random_word() 
+print(chosen_word)
+
 
 #displaying blanks for the word length
 display = [] #creating a list that will have the "_"
@@ -24,6 +24,7 @@ guess_count = 10 #hard coding guess count, will need to make interactable later
 for spot in range(len(chosen_word)):
     guess_letter = input("Can you enter a letter: ").lower() 
     letter = chosen_word[spot] #allows python to iterate through the word and input correct things
+    print("Your guess:", guess_letter, "against: ", letter)
     if letter == guess_letter: #letter in chosen_word:
         display[spot] = letter
         print(display)
