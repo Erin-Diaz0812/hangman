@@ -1,0 +1,105 @@
+word,main category,sub-category,length
+axolotl,animal,,7
+babirusa,animal,,8
+fox,animal,,3
+shark,animal,,5
+whale,animal,,5
+bat,animal,,3
+capybara,animal,,8
+octopus,animal,,7
+mongoose,animal,,8
+lynx,animal,,4
+leopard,animal,,7
+lion,animal,,4
+swan,animal,,4
+elephant,animal,,8
+zebra,animal,,5
+weasel,animal,,6
+crab,animal,,4
+lemur,animal,,5
+manatee,animal,,7
+narwhal,animal,,7
+,,,
+croissant,dessert,foreign word,9
+cannoli,dessert,foreign word,7
+cheesecake,dessert,,10
+chocolate,dessert,,9
+cookie,dessert,,6
+pudding,dessert,,7
+baklava,dessert,foreign word,7
+cake,dessert,,4
+tart,dessert,,4
+truffle,dessert,,7
+gelato,dessert,foreign word,6
+cobbler,dessert,,7
+custard,dessert,,7
+macaroon,dessert,foreign word,8
+mousse,dessert,foreign word,6
+parfait,dessert,,7
+strusel,dessert,,7
+tiramisu,dessert,foreign word,8
+eclaire,dessert,foreign word,7
+brownie,dessert,,7
+,,,0
+jacket,clothing,,6
+kimono,clothing,foreign word,6
+pants,clothing,,5
+skirt,clothing,,5
+dress,clothing,,5
+collar,clothing,,6
+coveralls,clothing,,9
+boots,clothing,,5
+cufflinks,clothing,,9
+suit,clothing,,4
+bolero,clothing,foreign word,6
+dashiki,clothing,foreign word,7
+hoodie,clothing,,6
+turtleneck,clothing,,10
+sneakers,clothing,,8
+sari,clothing,foreign word,4
+waistcoat,clothing,,9
+culottes,clothing,foreign word,8
+khakis,clothing,,6
+slacks,clothing,,6
+,,,
+suv,vehicles,,3
+pickup,vehicles,,6
+sedan,vehicles,,5
+trolley,vehicles,,7
+semi,vehicles,,4
+roadster,vehicles,,8
+limousine,vehicles,,9
+motorcycle,vehicles,,10
+sports,vehicles,,6
+hatchback,vehicles,,9
+coupe,vehicles,,5
+muscle,vehicles,,6
+minibus,vehicles,,7
+minivan,vehicles,,7
+campervan,vehicles,,9
+convertible,vehicles,,11
+gondola,vehicles,foreign word,7
+jetski,vehicles,,6
+submarine,vehicles,,9
+atv,vehicles,,3
+,,,
+ballet,foreign word,,6
+café,foreign word,,4
+rendezvous,foreign word,,10
+gesundheit,foreign word,,10
+dachshund,foreign word,,9
+macho,foreign word,,5
+plaza,foreign word,,5
+karate,foreign word,,6
+origami,foreign word,,7
+typhoon,foreign word,,7
+moped,foreign word,,5
+safari,foreign word,,6
+sushi,foreign word,,5
+ninja,foreign word,,5
+yoga,foreign word,,4
+tycoon,foreign word,,6
+typhoon,foreign word,,7
+fiesta,foreign word,,6
+rucksack,foreign word,,8
+zen,foreign word,,3
