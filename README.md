@@ -32,3 +32,12 @@ Next steps:
 
 
 2/25:
+- upload the csv word list to github and be confused as to why it's not showing up in the pane on the left
+- make round 4 file (basically copying round 3 but instead of random words it'll pull from the csv file)
+- it's been 30 minutes of hitting nothing but barriers. Firstly the csv file didn't exist fully, then I couldn't get it to be read, then the random function wouldn't work. So lines 1-7 (import pands to print(chosen_word) are all Claude's writings
+- then it's really jsut copying and pasting round 3 over to round 4
+
+Now the next big monumental thing to deal with is game set up function.
+I need this to be a function that's capable of allowing someone to choose which category, a word length or if they want a completely random word. 
+
+I got to creating a if statement for categories. 
