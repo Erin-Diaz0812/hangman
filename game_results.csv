@@ -1,0 +1,16 @@
+word,category,guesses_used,guesses_allowed,won,wrong_letters
+lynx,,6,4,True,"['a', 'e', 'i', 'o', 'u', 'y', 'l', 'g', 'x', 'n']"
+narwhal,,1,9,False,['ai']
+zebra,,1,9,False,"['ae', 'e']"
+eclaire,,0,10,False,[]
+atv,,0,10,False,[]
+parfait,,4,6,True,"['a', 'i', 'o', 'm', 'n', 't', 'r', 'w', 'p', 'f']"
+waistcoat,,2,8,True,"['a', 'e', 'i', 'o', 'u', 'c', 't', 's', 'w']"
+fiesta,,2,8,True,"['a', 'e', 'i', 'o', 'u', 't', 's', 'f']"
+plaza,,4,6,True,"['a', 'e', 'i', 'o', 'u', 'z', 'l', 'p']"
+narwhal,,0,10,False,['a']
+gesundheit,,1,9,False,['a']
+gesundheit,,1,9,False,"['a', 'e']"
+safari,,10,0,False,"['a', 'e', 'i', 'o', 'u', 'z', 'r', 'f', 'p', 'q', 'w', 't', 'y', 'm']"
+limousine,,10,0,False,"['a', 'e', 'i', 'o', 'u', 'z', 'x', 'c', 'v', 'b', 'n', 'm', 'q', 'w', 'r', 't']"
+campervan,,5,5,True,"['a', 'e', 'i', 'o', 'u', 'y', 'z', 'n', 'c', 'm', 'p', 'r', 'v']"

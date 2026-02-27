@@ -80,3 +80,9 @@ To-do:
 
 I think that this might be a good spot to pause, since the next step is making the live csv file (which should probably be done on laptop for Tableau) and then we go into website, image increments, and data viz side of this project. i think by now, this project is around 11 hours worth of work. 
 (most of which it feels like Claude ended up coding for me but I tried! I looked around for references as to how things could work, tried to debug, and more. Mainly Claude was used as a way to help me keep moving, debugging, or if I was stuck somewhere. Although, I was debugging everywhere and was stuck everywhere so it feels like Claude coded everything for me. The main thing I brought in and is fully human is the idea, structure, the wordle-style flow, word list, category logic, customization, etc. Claude claims to have mainly helped with syntax and explaining why things weren't working but it feels like Claude did a lot more than that. :( )
+
+
+2/27:
+okay, game and live update csv file is basically done! So onto website now.
+What happened to complete the game is trying to do a python loop (and failing at it, so this is now a website issue) and then finalizing the export csv file feature, ensuring that this csv file is being live updated.
+
