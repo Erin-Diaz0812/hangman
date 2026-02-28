@@ -158,6 +158,14 @@ function buildKeyboard() {
     });
 }
 
+const hangmanParts = ["h-head", "h-body", "h-left-arm", "h-right-arm", "h-left-leg", "h-right-leg"];
+
+function updateHangman() {
+    if (wrongGuesses <= hangmanParts.length) {
+        document.getElementById(hangmanParts[wrongGuesses - 1]).style.display = "block";
+    }
+}
+
 function enableKeyboardTyping() {
     document.onkeydown = function(e) {
         const letter = e.key.toLowerCase();
@@ -185,12 +193,6 @@ function guessLetter(letter) {
         updateHangman();
         keyBtn.style.background = "red";
         keyBtn.style.color = "white";
-    const hangmanParts = ["h-head", "h-body", "h-left-arm", "h-right-arm", "h-left-leg", "h-right-leg"];
-
-    function updateHangman() {
-        if (wrongGuesses <= hangmanParts.length) {
-            document.getElementById(hangmanParts[wrongGuesses - 1]).style.display = "block";
-        }
     }
     keyBtn.disabled = true;
 
