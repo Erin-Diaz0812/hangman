@@ -40,7 +40,7 @@ strusel,dessert,,7
 tiramisu,dessert,foreign word,8
 eclaire,dessert,foreign word,7
 brownie,dessert,,7
-,,,0
+,,,
 jacket,clothing,,6
 kimono,clothing,foreign word,6
 pants,clothing,,5
@@ -85,7 +85,7 @@ atv,vehicles,,3
 ,,,
 ballet,foreign word,,6
 cafe,foreign word,,4
-rendezvous,foreign word,,10s
+rendezvous,foreign word,,10
 gesundheit,foreign word,,10
 dachshund,foreign word,,9
 macho,foreign word,,5
