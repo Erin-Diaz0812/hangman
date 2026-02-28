@@ -18,3 +18,6 @@ pants,,8,2,True,"['e', 'a', 'i', 'u', 'o', 'y', 't', 's', 'r', 'f', 'c', 'p', 'n
 cufflinks,,10,0,False,"['a', 'e', 'i', 'o', 'u', 'y', 't', 's', 'h', 'r', 'n', 'p', 'b', 'w']"
 cookie,,6,4,True,"['s', 'e', 't', 'a', 'i', 'o', 'r', 'm', 'c', 'j', 'k']"
 atv,,3,7,True,"['e', 'a', 'i', 't', 'm', 'v']"
+octopus,animal,8,2,True,"['e', 'a', 'i', 'o', 'r', 's', 'c', 't', 'p', 'u']"
+convertible,,7,3,True,"['a', 'e', 'i', 'o', 'u', 'y', 't', 's', 'l', 'p', 'r', 'g', 'b', 'q', 'c', 'v', 'n']"
+sari,foreign word,10,0,False,"['w', 'y', 'o', 'g', 'u', 'e', 'b', 'p', 's', 'r', 'i', 't', 'c']"
