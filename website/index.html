@@ -3,16 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Hangman - HackUSU 2026</title>
 </head>
 <body>
-   
-<heading>Welcome to hangman!</heading>
 
-<p>The purpose behind this website is to act as my project for the HackUSU event in 2026.</p>
+<div id="hero">
+    <h1>Welcome to hangman!</h1>
 
-<button> Would you like to start playing? </button>
+    <p>The purpose behind this website is to act as my project for the HackUSU event in 2026.</p>
 
+    <button onclick="startGame()"> Would you like to start playing? </button>
+</div>
+
+
+
+<div id="game" style="display: none;">
+    <!-- Game section-->
+</div>
+
+
+
+<div id="stats" style="display: none;">
+    <!-- Stats section-->
+</div>
+
+
+
+<script>
+    function startGame() {
+      document.getElementById("hero").style.display = "none";
+      document.getElementById("game").style.display = "block";
+    }
+</script>
 
 </body>
 </html>
