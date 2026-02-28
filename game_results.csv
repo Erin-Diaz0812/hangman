@@ -51,3 +51,5 @@ capybara,,10,0,False,"['a', 'e', 'i', 'o', 'u', 'g', 'h', 'p', 'r', 's', 'd', 'f
 mousse,dessert,7,3,True,"['a', 'e', 'i', 'o', 'u', 'p', 'q', 'z', 'l', 'k', 'm', 's']"
 cufflinks,clothing,10,0,False,"['a', 'e', 'i', 'o', 'u', 'y', 'g', 'm', 'k', 'p', 'r', 'q', 'c', 't']"
 dashiki,foreign word,10,0,False,"['a', 'e', 'i', 'o', 'u', 's', 'k', 'm', 'q', 'p', 'n', 't', 'w', 'h', 'l']"
+babirusa,animal,10,0,False,"['a', 'e', 'i', 'o', 'u', 'm', 'n', 't', 'p', 'q', 'r', 'c', 'k', 'w']"
+gelato,,7,3,True,"['a', 'e', 'i', 'o', 'u', 'k', 'm', 'n', 't', 'c', 'b', 'l', 'g']"
