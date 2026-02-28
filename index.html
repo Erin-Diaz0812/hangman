@@ -134,9 +134,8 @@ function startGame() {
 
     document.getElementById("setup").style.display = "none";
     document.getElementById("word-display").innerHTML = "";
-    document.getElementById("result").innerHTML = "";
-    document.getElementById("result").innerHTML = "";
-
+    document.getElementById("result").innerHTML = ""; //this line and 136 used to be a board clearing line of code
+    
     displayWord();
     buildKeyboard();
     enableKeyboardTyping();
@@ -263,12 +262,12 @@ function downloadCSV() {
 function resetGame() {
     disableKeyboardTyping();
     document.getElementById("setup").style.display = "block";
-    document.getElementById("board").innerHTML = "";
+    document.getElementById("word-display").innerHTML = "";
     document.getElementById("keyboard").innerHTML = "";
     document.getElementById("result").innerHTML = "";
     hangmanParts.forEach(id => {
-    document.getElementById(id).style.display = "none";
-});
+        document.getElementById(id).style.display = "none";
+    });
 }
 </script>
 </body>
