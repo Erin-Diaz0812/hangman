@@ -68,17 +68,41 @@ const wordList = [
   { word: "sushi", category: "foreign word", length: 5 },
 ];
 
+function filterWords(category, length) {
+    let filtered = wordList;
+
+    if (category !== "all") {
+        filtered = filtered.filter(w => w.category === category);
+    }
+
+    if (length !== "") {
+        filtered = filtered.filter(w => w.length === parseInt(length));
+    }
+
+    return filtered;
+}
+
     function showGame() {
         document.getElementById("hero").style.display = "none";
         document.getElementById("game").style.display = "block";
     }
 
     function startGame() {
+    function startGame() {
     const category = document.getElementById("category").value;
     const wordLength = document.getElementById("wordLength").value;
-    const guessCount = document.getElementById("guessCount").value || 10;
+    const guessCount = parseInt(document.getElementById("guessCount").value) || 10;
 
-    alert("Category: " + category + ", Length: " + wordLength + ", Guesses: " + guessCount);
+    const available = filterWords(category, wordLength);
+
+    if (available.length === 0) {
+        alert("No words found with those filters! Try different settings.");
+        return;
+    }
+
+    const chosen = available[Math.floor(Math.random() * available.length)];
+    alert("Word chosen: " + chosen.word + " (" + chosen.length + " letters)");
+}
 }
 </script>
 </body>
