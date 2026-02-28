@@ -354,3 +354,85 @@ elephant,,0,10,True,n
 elephant,,0,10,True,l
 elephant,,0,10,True,p
 elephant,,0,10,True,h
+trolley,vehicles,10,0,False,a
+trolley,vehicles,10,0,False,e
+trolley,vehicles,10,0,False,i
+trolley,vehicles,10,0,False,o
+trolley,vehicles,10,0,False,u
+trolley,vehicles,10,0,False,m
+trolley,vehicles,10,0,False,c
+trolley,vehicles,10,0,False,p
+trolley,vehicles,10,0,False,q
+trolley,vehicles,10,0,False,z
+trolley,vehicles,10,0,False,s
+trolley,vehicles,10,0,False,j
+sports,vehicles,10,0,False,a
+sports,vehicles,10,0,False,e
+sports,vehicles,10,0,False,i
+sports,vehicles,10,0,False,o
+sports,vehicles,10,0,False,u
+sports,vehicles,10,0,False,r
+sports,vehicles,10,0,False,l
+sports,vehicles,10,0,False,b
+sports,vehicles,10,0,False,j
+sports,vehicles,10,0,False,m
+sports,vehicles,10,0,False,n
+sports,vehicles,10,0,False,w
+mousse,foreign word,3,7,True,a
+mousse,foreign word,3,7,True,e
+mousse,foreign word,3,7,True,i
+mousse,foreign word,3,7,True,o
+mousse,foreign word,3,7,True,u
+mousse,foreign word,3,7,True,k
+mousse,foreign word,3,7,True,s
+mousse,foreign word,3,7,True,m
+lion,animal,10,0,False,a
+lion,animal,10,0,False,e
+lion,animal,10,0,False,i
+lion,animal,10,0,False,o
+lion,animal,10,0,False,u
+lion,animal,10,0,False,y
+lion,animal,10,0,False,m
+lion,animal,10,0,False,x
+lion,animal,10,0,False,z
+lion,animal,10,0,False,w
+lion,animal,10,0,False,p
+lion,animal,10,0,False,r
+karate,,10,0,False,a
+karate,,10,0,False,e
+karate,,10,0,False,i
+karate,,10,0,False,o
+karate,,10,0,False,u
+karate,,10,0,False,y
+karate,,10,0,False,r
+karate,,10,0,False,c
+karate,,10,0,False,j
+karate,,10,0,False,p
+karate,,10,0,False,q
+karate,,10,0,False,m
+karate,,10,0,False,n
+strusel,dessert,10,0,False,a
+strusel,dessert,10,0,False,i
+strusel,dessert,10,0,False,e
+strusel,dessert,10,0,False,o
+strusel,dessert,10,0,False,u
+strusel,dessert,10,0,False,y
+strusel,dessert,10,0,False,c
+strusel,dessert,10,0,False,k
+strusel,dessert,10,0,False,p
+strusel,dessert,10,0,False,q
+strusel,dessert,10,0,False,z
+strusel,dessert,10,0,False,h
+dashiki,clothing,10,0,False,a
+dashiki,clothing,10,0,False,e
+dashiki,clothing,10,0,False,i
+dashiki,clothing,10,0,False,o
+dashiki,clothing,10,0,False,u
+dashiki,clothing,10,0,False,y
+dashiki,clothing,10,0,False,k
+dashiki,clothing,10,0,False,m
+dashiki,clothing,10,0,False,b
+dashiki,clothing,10,0,False,r
+dashiki,clothing,10,0,False,w
+dashiki,clothing,10,0,False,t
+dashiki,clothing,10,0,False,c

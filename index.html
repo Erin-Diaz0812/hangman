@@ -200,6 +200,8 @@
     </div>
 
      <div id="board"> 
+        <div id="game-info" style="font-size: 1rem; color: #6b7280; margin-bottom: 12px;"></div>
+
         <svg id="hangman-svg" viewBox="0 0 200 220" width="200" height="220">
             <!-- Gallows -->
             <line x1="20" y1="210" x2="180" y2="210" stroke="black" stroke-width="4"/>
@@ -227,7 +229,12 @@
 
 
 <div id="stats" style="display: none;">
-    <!-- Stats section-->
+      <object class='tableauViz'>
+    <param name='host_url' value='https://public.tableau.com/'/>
+    <param name='embed_code_version' value='3'/>
+    <param name='name' value='YourWorkbook/YourDashboard'/>
+    ...
+  </object>
 </div>
 
 
@@ -368,6 +375,10 @@ function startGame() {
     const chosen = available[Math.floor(Math.random() * available.length)];
     currentWord = chosen.word;
 
+    document.getElementById("game-info").innerHTML = 
+    "Category: " + (category === "all" ? "Random" : category) + 
+    " | Word length: " + currentWord.length;
+
     document.getElementById("setup").style.display = "none";
     document.getElementById("word-display").innerHTML = "";
     document.getElementById("result").innerHTML = ""; //this line and 136 used to be a board clearing line of code
@@ -375,6 +386,16 @@ function startGame() {
     displayWord();
     buildKeyboard();
     enableKeyboardTyping();
+
+<div class='tableauPlaceholder'>
+  <object class='tableauViz'>
+    <param name='host_url' value='https://public.tableau.com/'/>
+    <param name='embed_code_version' value='3'/>
+    <param name='name' value='YourWorkbook/YourDashboard'/>
+    ...
+  </object>
+</div>
+
 }
 
 function displayWord() {
@@ -499,6 +520,7 @@ function resetGame() {
     disableKeyboardTyping();
     document.getElementById("setup").style.display = "block";
     document.getElementById("word-display").innerHTML = "";
+    document.getElementById("game-info").innerHTML = "";
     document.getElementById("keyboard").innerHTML = "";
     document.getElementById("result").innerHTML = "";
     hangmanParts.forEach(id => {
