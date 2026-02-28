@@ -85,56 +85,98 @@ const wordList = [
 
 function filterWords(category, length) {
     let filtered = wordList;
-
-    if (category !== "all") {
-        filtered = filtered.filter(w => w.category === category);
-    }
-
-    if (length !== "") {
-        filtered = filtered.filter(w => w.length === parseInt(length));
-    }
-
+    if (category !== "all") filtered = filtered.filter(w => w.category === category);
+    if (length !== "") filtered = filtered.filter(w => w.length === parseInt(length));
     return filtered;
 }
 
-    function showGame() {
-        document.getElementById("hero").style.display = "none";
-        document.getElementById("game").style.display = "block";
-    }
+function showGame() {
+    document.getElementById("hero").style.display = "none";
+    document.getElementById("game").style.display = "block";
+}
 
-
-
-    function startGame() {
+function startGame() {
     const category = document.getElementById("category").value;
     const wordLength = document.getElementById("wordLength").value;
-    const guessCount = parseInt(document.getElementById("guessCount").value) || 10;
+    guessesLeft = parseInt(document.getElementById("guessCount").value) || 10;
 
     const available = filterWords(category, wordLength);
-
     if (available.length === 0) {
         alert("No words found with those filters! Try different settings.");
         return;
     }
-
 
     const chosen = available[Math.floor(Math.random() * available.length)];
     currentWord = chosen.word;
     guessedLetters = [];
 
     document.getElementById("setup").style.display = "none";
-    document.getElementById("board").style.display = "block";
+    document.getElementById("board").innerHTML = "";
+    document.getElementById("result").innerHTML = "";
 
     displayWord();
+    buildKeyboard();
 }
 
 function displayWord() {
     const boardDiv = document.getElementById("board");
     boardDiv.innerHTML = currentWord.split("").map(letter => {
-        return `<span class="blank">_</span>`;
+        return guessedLetters.includes(letter)
+            ? `<span class="blank">${letter}</span>`
+            : `<span class="blank">_</span>`;
     }).join(" ");
 }
 
+function buildKeyboard() {
+    const keyboardDiv = document.getElementById("keyboard");
+    keyboardDiv.innerHTML = "";
+    "abcdefghijklmnopqrstuvwxyz".split("").forEach(letter => {
+        const btn = document.createElement("button");
+        btn.textContent = letter;
+        btn.id = "key-" + letter;
+        btn.onclick = () => guessLetter(letter);
+        keyboardDiv.appendChild(btn);
+    });
+}
 
+function guessLetter(letter) {
+    if (guessedLetters.includes(letter)) return;
+    guessedLetters.push(letter);
+
+    const keyBtn = document.getElementById("key-" + letter);
+    if (currentWord.includes(letter)) {
+        keyBtn.style.background = "green";
+        keyBtn.style.color = "white";
+    } else {
+        guessesLeft--;
+        keyBtn.style.background = "red";
+        keyBtn.style.color = "white";
+    }
+    keyBtn.disabled = true;
+
+    displayWord();
+    checkResult();
+}
+
+function checkResult() {
+    const resultDiv = document.getElementById("result");
+    const allRevealed = currentWord.split("").every(l => guessedLetters.includes(l));
+
+    if (allRevealed) {
+        resultDiv.innerHTML = "<p> You win! The word was: " + currentWord + "</p><button onclick='resetGame()'>Play Again</button>";
+    } else if (guessesLeft <= 0) {
+        resultDiv.innerHTML = "<p> You lose! The word was: " + currentWord + "</p><button onclick='resetGame()'>Play Again</button>";
+    } else {
+        resultDiv.innerHTML = "<p>Guesses left: " + guessesLeft + "</p>";
+    }
+}
+
+function resetGame() {
+    document.getElementById("setup").style.display = "block";
+    document.getElementById("board").innerHTML = "";
+    document.getElementById("keyboard").innerHTML = "";
+    document.getElementById("result").innerHTML = "";
+}
 </script>
 </body>
 </html>
