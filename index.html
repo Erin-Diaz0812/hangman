@@ -66,6 +66,10 @@
             <line id="h-left-leg" x1="130" y1="135" x2="100" y2="170" stroke="black" stroke-width="4" style="display:none"/>
             <line id="h-right-leg" x1="130" y1="135" x2="160" y2="170" stroke="black" stroke-width="4" style="display:none"/>
         </svg>  
+
+        <div id="word-display"></div>
+        </div>
+
     </div>
      <div id="keyboard"> <!--letter boards --> </div>
      <div id="result"> <!-- words --> </div>
@@ -129,7 +133,8 @@ function startGame() {
     currentWord = chosen.word;
 
     document.getElementById("setup").style.display = "none";
-    document.getElementById("board").innerHTML = "";
+    document.getElementById("word-display").innerHTML = "";
+    document.getElementById("result").innerHTML = "";
     document.getElementById("result").innerHTML = "";
 
     displayWord();
@@ -138,8 +143,8 @@ function startGame() {
 }
 
 function displayWord() {
-    const boardDiv = document.getElementById("board");
-    boardDiv.innerHTML = currentWord.split("").map(letter => {
+    const wordDiv = document.getElementById("word-display");
+    wordDiv.innerHTML = currentWord.split("").map(letter => {
         return guessedLetters.includes(letter)
             ? `<span class="blank">${letter}</span>`
             : `<span class="blank">_</span>`;
@@ -261,6 +266,9 @@ function resetGame() {
     document.getElementById("board").innerHTML = "";
     document.getElementById("keyboard").innerHTML = "";
     document.getElementById("result").innerHTML = "";
+    hangmanParts.forEach(id => {
+    document.getElementById(id).style.display = "none";
+});
 }
 </script>
 </body>
