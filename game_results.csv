@@ -43,3 +43,7 @@ lion,animal,10,0,False,"['a', 'e', 'i', 'o', 'u', 'y', 'm', 'x', 'z', 'w', 'p', 
 karate,,10,0,False,"['a', 'e', 'i', 'o', 'u', 'y', 'r', 'c', 'j', 'p', 'q', 'm', 'n']"
 strusel,dessert,10,0,False,"['a', 'i', 'e', 'o', 'u', 'y', 'c', 'k', 'p', 'q', 'z', 'h']"
 dashiki,clothing,10,0,False,"['a', 'e', 'i', 'o', 'u', 'y', 'k', 'm', 'b', 'r', 'w', 't', 'c']"
+waistcoat,clothing,9,1,True,"['a', 'e', 'i', 'o', 'u', 'j', 'm', 'n', 'k', 'p', 'q', 'r', 's', 'c', 'w', 't']"
+lynx,animal,5,5,True,"['a', 'e', 'i', 'o', 'u', 'y', 'l', 'n', 'x']"
+gesundheit,foreign word,2,8,True,"['a', 'e', 'i', 'o', 'u', 'g', 's', 'n', 'd', 'h', 't']"
+safari,,10,0,False,"['a', 'e', 'i', 'o', 'u', 'x', 'y', 'z', 'g', 'm', 'n', 'q']"
