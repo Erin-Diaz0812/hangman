@@ -88,7 +88,6 @@ function filterWords(category, length) {
     }
 
     function startGame() {
-    function startGame() {
     const category = document.getElementById("category").value;
     const wordLength = document.getElementById("wordLength").value;
     const guessCount = parseInt(document.getElementById("guessCount").value) || 10;
@@ -103,7 +102,8 @@ function filterWords(category, length) {
     const chosen = available[Math.floor(Math.random() * available.length)];
     alert("Word chosen: " + chosen.word + " (" + chosen.length + " letters)");
 }
-}
+
+
 </script>
 </body>
 </html>
