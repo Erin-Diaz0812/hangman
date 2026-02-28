@@ -69,6 +69,8 @@
 let currentWord = "";
 let guessesLeft = 0;
 let guessedLetters = [];
+let wrongGuesses = 0;
+let sessionResults = [];
 
 const wordList = [
   { word: "axolotl", category: "animal", length: 7 },
@@ -99,6 +101,8 @@ function startGame() {
     const category = document.getElementById("category").value;
     const wordLength = document.getElementById("wordLength").value;
     guessesLeft = parseInt(document.getElementById("guessCount").value) || 10;
+    wrongGuesses = 0;
+    guessedLetters = [];
 
     const available = filterWords(category, wordLength);
     if (available.length === 0) {
@@ -108,7 +112,6 @@ function startGame() {
 
     const chosen = available[Math.floor(Math.random() * available.length)];
     currentWord = chosen.word;
-    guessedLetters = [];
 
     document.getElementById("setup").style.display = "none";
     document.getElementById("board").innerHTML = "";
@@ -116,6 +119,7 @@ function startGame() {
 
     displayWord();
     buildKeyboard();
+    enableKeyboardTyping();
 }
 
 function displayWord() {
@@ -162,6 +166,7 @@ function guessLetter(letter) {
         keyBtn.style.color = "white";
     } else {
         guessesLeft--;
+        wrongGuesses++;
         keyBtn.style.background = "red";
         keyBtn.style.color = "white";
     }
@@ -178,9 +183,11 @@ function checkResult() {
     if (allRevealed) {
         disableKeyboardTyping();
         logResult("win");
-        resultDiv.innerHTML = "<p> You win! The word was: " + currentWord + "</p><button onclick='resetGame()'>Play Again</button>";
+        resultDiv.innerHTML = "<p>🎉 You win! The word was: " + currentWord + "</p><button onclick='resetGame()'>Play Again</button>";
     } else if (guessesLeft <= 0) {
-        resultDiv.innerHTML = "<p> You lose! The word was: " + currentWord + "</p><button onclick='resetGame()'>Play Again</button>";
+        disableKeyboardTyping();
+        logResult("loss");
+        resultDiv.innerHTML = "<p>💀 You lose! The word was: " + currentWord + "</p><button onclick='resetGame()'>Play Again</button>";
     } else {
         resultDiv.innerHTML = "<p>Guesses left: " + guessesLeft + "</p>";
     }
@@ -224,6 +231,7 @@ function downloadCSV() {
 }
 
 function resetGame() {
+    disableKeyboardTyping();
     document.getElementById("setup").style.display = "block";
     document.getElementById("board").innerHTML = "";
     document.getElementById("keyboard").innerHTML = "";
