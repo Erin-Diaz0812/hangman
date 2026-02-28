@@ -86,3 +86,7 @@ I think that this might be a good spot to pause, since the next step is making t
 okay, game and live update csv file is basically done! So onto website now.
 What happened to complete the game is trying to do a python loop (and failing at it, so this is now a website issue) and then finalizing the export csv file feature, ensuring that this csv file is being live updated.
 
+Today is going to be intensive website day! apparently a lot of javascript will be needed, so we'll do a mix of vibe coding and trying to learn javascript.
+
+Note to claude about filtering the word length:
+I will say, would it be possible to update the word length to be a range of values (3-5, 6-8, 9-11 or something) or would that be too much detail that it isn't going to be worth it. In which case, maybe it'll be best to create a hard range (3 to 11 letters) so no one can surpass that range (unless that'll be a later endeavor). A note is that this will need to be presented in about 16 hours but I probably only have about 10 hours of productivity left realistically

@@ -33,3 +33,6 @@ motorcycle,,4,6,True,"['p', 'o', 'i', 'u', 'y', 't', 'h', 'm', 'r', 'c', 'l', 'e
 mousse,,6,4,True,"['b', 'm', 'n', 'o', 'r', 'w', 'd', 'c', 'u', 's', 'e']"
 café,,10,0,False,"['t', 's', 'e', 'a', 'i', 'u', 'o', 'y', 'b', 'm', 'n']"
 custard,,10,0,False,"['q', 'w', 'e', 'r', 't', 'y', 'u', 'i', 'o', 'p', 'a', 's', 'd', 'f', 'g', 'h']"
+slacks,,9,1,True,"['e', 't', 's', 'a', 'r', 'p', 'h', 'n', 'i', 'o', 'u', 'c', 'l', 'k']"
+convertible,,10,0,False,"['e', 't', 'r', 's', 'a', 'o', 'u', 'i', 'm', 'n', 'l', 'j', 'w', 'd', 'p', 'h', 'g']"
+elephant,,0,10,True,"['t', 'e', 'a', 'n', 'l', 'p', 'h']"

@@ -32,6 +32,7 @@
 
         <label for="wordLength"> Word Length: </label>
         <select id="wordLength">
+            <option value="any"> Any </option>
             <option value="3"> 3 </option>
             <option value="4"> 4 </option>
             <option value="5"> 5 </option>
@@ -65,6 +66,10 @@
 
 
 <script>
+let currentWord = "";
+let guessesLeft = 0;
+let guessedLetters = [];
+
 const wordList = [
   { word: "axolotl", category: "animal", length: 7 },
   { word: "fox", category: "animal", length: 3 },
@@ -97,6 +102,8 @@ function filterWords(category, length) {
         document.getElementById("game").style.display = "block";
     }
 
+
+
     function startGame() {
     const category = document.getElementById("category").value;
     const wordLength = document.getElementById("wordLength").value;
@@ -109,8 +116,22 @@ function filterWords(category, length) {
         return;
     }
 
+    
     const chosen = available[Math.floor(Math.random() * available.length)];
-    alert("Word chosen: " + chosen.word + " (" + chosen.length + " letters)");
+    currentWord = chosen.word;
+    guessedLetters = [];
+
+    document.getElementById("setup").style.display = "none";
+    document.getElementById("board").style.display = "block";
+
+    displayWord();
+}
+
+function displayWord() {
+    const boardDiv = document.getElementById("board");
+    boardDiv.innerHTML = currentWord.split("").map(letter => {
+        return `<span class="blank">_</span>`;
+    }).join(" ");
 }
 
 
