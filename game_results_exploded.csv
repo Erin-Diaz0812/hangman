@@ -436,3 +436,132 @@ dashiki,clothing,10,0,False,r
 dashiki,clothing,10,0,False,w
 dashiki,clothing,10,0,False,t
 dashiki,clothing,10,0,False,c
+waistcoat,clothing,9,1,True,a
+waistcoat,clothing,9,1,True,e
+waistcoat,clothing,9,1,True,i
+waistcoat,clothing,9,1,True,o
+waistcoat,clothing,9,1,True,u
+waistcoat,clothing,9,1,True,j
+waistcoat,clothing,9,1,True,m
+waistcoat,clothing,9,1,True,n
+waistcoat,clothing,9,1,True,k
+waistcoat,clothing,9,1,True,p
+waistcoat,clothing,9,1,True,q
+waistcoat,clothing,9,1,True,r
+waistcoat,clothing,9,1,True,s
+waistcoat,clothing,9,1,True,c
+waistcoat,clothing,9,1,True,w
+waistcoat,clothing,9,1,True,t
+lynx,animal,5,5,True,a
+lynx,animal,5,5,True,e
+lynx,animal,5,5,True,i
+lynx,animal,5,5,True,o
+lynx,animal,5,5,True,u
+lynx,animal,5,5,True,y
+lynx,animal,5,5,True,l
+lynx,animal,5,5,True,n
+lynx,animal,5,5,True,x
+gesundheit,foreign word,2,8,True,a
+gesundheit,foreign word,2,8,True,e
+gesundheit,foreign word,2,8,True,i
+gesundheit,foreign word,2,8,True,o
+gesundheit,foreign word,2,8,True,u
+gesundheit,foreign word,2,8,True,g
+gesundheit,foreign word,2,8,True,s
+gesundheit,foreign word,2,8,True,n
+gesundheit,foreign word,2,8,True,d
+gesundheit,foreign word,2,8,True,h
+gesundheit,foreign word,2,8,True,t
+safari,,10,0,False,a
+safari,,10,0,False,e
+safari,,10,0,False,i
+safari,,10,0,False,o
+safari,,10,0,False,u
+safari,,10,0,False,x
+safari,,10,0,False,y
+safari,,10,0,False,z
+safari,,10,0,False,g
+safari,,10,0,False,m
+safari,,10,0,False,n
+safari,,10,0,False,q
+capybara,,10,0,False,a
+capybara,,10,0,False,e
+capybara,,10,0,False,i
+capybara,,10,0,False,o
+capybara,,10,0,False,u
+capybara,,10,0,False,g
+capybara,,10,0,False,h
+capybara,,10,0,False,p
+capybara,,10,0,False,r
+capybara,,10,0,False,s
+capybara,,10,0,False,d
+capybara,,10,0,False,f
+capybara,,10,0,False,j
+mousse,dessert,7,3,True,a
+mousse,dessert,7,3,True,e
+mousse,dessert,7,3,True,i
+mousse,dessert,7,3,True,o
+mousse,dessert,7,3,True,u
+mousse,dessert,7,3,True,p
+mousse,dessert,7,3,True,q
+mousse,dessert,7,3,True,z
+mousse,dessert,7,3,True,l
+mousse,dessert,7,3,True,k
+mousse,dessert,7,3,True,m
+mousse,dessert,7,3,True,s
+cufflinks,clothing,10,0,False,a
+cufflinks,clothing,10,0,False,e
+cufflinks,clothing,10,0,False,i
+cufflinks,clothing,10,0,False,o
+cufflinks,clothing,10,0,False,u
+cufflinks,clothing,10,0,False,y
+cufflinks,clothing,10,0,False,g
+cufflinks,clothing,10,0,False,m
+cufflinks,clothing,10,0,False,k
+cufflinks,clothing,10,0,False,p
+cufflinks,clothing,10,0,False,r
+cufflinks,clothing,10,0,False,q
+cufflinks,clothing,10,0,False,c
+cufflinks,clothing,10,0,False,t
+dashiki,foreign word,10,0,False,a
+dashiki,foreign word,10,0,False,e
+dashiki,foreign word,10,0,False,i
+dashiki,foreign word,10,0,False,o
+dashiki,foreign word,10,0,False,u
+dashiki,foreign word,10,0,False,s
+dashiki,foreign word,10,0,False,k
+dashiki,foreign word,10,0,False,m
+dashiki,foreign word,10,0,False,q
+dashiki,foreign word,10,0,False,p
+dashiki,foreign word,10,0,False,n
+dashiki,foreign word,10,0,False,t
+dashiki,foreign word,10,0,False,w
+dashiki,foreign word,10,0,False,h
+dashiki,foreign word,10,0,False,l
+babirusa,animal,10,0,False,a
+babirusa,animal,10,0,False,e
+babirusa,animal,10,0,False,i
+babirusa,animal,10,0,False,o
+babirusa,animal,10,0,False,u
+babirusa,animal,10,0,False,m
+babirusa,animal,10,0,False,n
+babirusa,animal,10,0,False,t
+babirusa,animal,10,0,False,p
+babirusa,animal,10,0,False,q
+babirusa,animal,10,0,False,r
+babirusa,animal,10,0,False,c
+babirusa,animal,10,0,False,k
+babirusa,animal,10,0,False,w
+gelato,,7,3,True,a
+gelato,,7,3,True,e
+gelato,,7,3,True,i
+gelato,,7,3,True,o
+gelato,,7,3,True,u
+gelato,,7,3,True,k
+gelato,,7,3,True,m
+gelato,,7,3,True,n
+gelato,,7,3,True,t
+gelato,,7,3,True,c
+gelato,,7,3,True,b
+gelato,,7,3,True,l
+gelato,,7,3,True,g
