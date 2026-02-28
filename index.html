@@ -139,6 +139,19 @@ function buildKeyboard() {
     });
 }
 
+function enableKeyboardTyping() {
+    document.onkeydown = function(e) {
+        const letter = e.key.toLowerCase();
+        if (/^[a-z]$/.test(letter)) {
+            guessLetter(letter);
+        }
+    };
+}
+
+function disableKeyboardTyping() {
+    document.onkeydown = null;
+}
+
 function guessLetter(letter) {
     if (guessedLetters.includes(letter)) return;
     guessedLetters.push(letter);
@@ -163,12 +176,51 @@ function checkResult() {
     const allRevealed = currentWord.split("").every(l => guessedLetters.includes(l));
 
     if (allRevealed) {
+        disableKeyboardTyping();
+        logResult("win");
         resultDiv.innerHTML = "<p> You win! The word was: " + currentWord + "</p><button onclick='resetGame()'>Play Again</button>";
     } else if (guessesLeft <= 0) {
         resultDiv.innerHTML = "<p> You lose! The word was: " + currentWord + "</p><button onclick='resetGame()'>Play Again</button>";
     } else {
         resultDiv.innerHTML = "<p>Guesses left: " + guessesLeft + "</p>";
     }
+}
+
+function logResult(outcome) {
+    const totalGuesses = parseInt(document.getElementById("guessCount").value) || 10;
+    const category = document.getElementById("category").value;
+
+    sessionResults.push({
+        word: currentWord,
+        category: category,
+        word_length: currentWord.length,
+        total_guesses_allowed: totalGuesses,
+        wrong_guesses: wrongGuesses,
+        correct_guesses: guessedLetters.filter(l => currentWord.includes(l)).length,
+        outcome: outcome,
+        letters_guessed: guessedLetters.join(""),
+        date: new Date().toLocaleDateString()
+    });
+
+    if (sessionResults.length >= 10) {
+        downloadCSV();
+    }
+}
+
+function downloadCSV() {
+    const headers = ["word","category","word_length","total_guesses_allowed","wrong_guesses","correct_guesses","outcome","letters_guessed","date"];
+    const rows = sessionResults.map(r => headers.map(h => r[h]).join(","));
+    const csvContent = [headers.join(","), ...rows].join("\n");
+
+    const blob = new Blob([csvContent], { type: "text/csv" });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = "hangman_results.csv";
+    a.click();
+    URL.revokeObjectURL(url);
+
+    sessionResults = [];
 }
 
 function resetGame() {
