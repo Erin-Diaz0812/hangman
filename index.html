@@ -32,7 +32,7 @@
 
         <label for="wordLength"> Word Length: </label>
         <select id="wordLength">
-            <option value="any"> Any </option>
+            <option value=""> Any </option>
             <option value="3"> 3 </option>
             <option value="4"> 4 </option>
             <option value="5"> 5 </option>
@@ -116,7 +116,7 @@ function filterWords(category, length) {
         return;
     }
 
-    
+
     const chosen = available[Math.floor(Math.random() * available.length)];
     currentWord = chosen.word;
     guessedLetters = [];
