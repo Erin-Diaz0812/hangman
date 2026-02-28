@@ -51,7 +51,22 @@
         <!--set up: category, word length, guess count, start game button--> 
     </div>
 
-     <div id="board"> <!-- drawing +  word blanks --> </div>
+     <div id="board"> 
+        <svg id="hangman-svg" viewBox="0 0 200 220" width="200" height="220">
+            <!-- Gallows -->
+            <line x1="20" y1="210" x2="180" y2="210" stroke="black" stroke-width="4"/>
+            <line x1="60" y1="210" x2="60" y2="20" stroke="black" stroke-width="4"/>
+            <line x1="60" y1="20" x2="130" y2="20" stroke="black" stroke-width="4"/>
+            <line x1="130" y1="20" x2="130" y2="45" stroke="black" stroke-width="4"/>
+            <!-- Body parts (hidden by default) -->
+            <circle id="h-head" cx="130" cy="60" r="15" stroke="black" stroke-width="4" fill="none" style="display:none"/>
+            <line id="h-body" x1="130" y1="75" x2="130" y2="135" stroke="black" stroke-width="4" style="display:none"/>
+            <line id="h-left-arm" x1="130" y1="90" x2="100" y2="115" stroke="black" stroke-width="4" style="display:none"/>
+            <line id="h-right-arm" x1="130" y1="90" x2="160" y2="115" stroke="black" stroke-width="4" style="display:none"/>
+            <line id="h-left-leg" x1="130" y1="135" x2="100" y2="170" stroke="black" stroke-width="4" style="display:none"/>
+            <line id="h-right-leg" x1="130" y1="135" x2="160" y2="170" stroke="black" stroke-width="4" style="display:none"/>
+        </svg>  
+    </div>
      <div id="keyboard"> <!--letter boards --> </div>
      <div id="result"> <!-- words --> </div>
 
@@ -167,8 +182,16 @@ function guessLetter(letter) {
     } else {
         guessesLeft--;
         wrongGuesses++;
+        updateHangman();
         keyBtn.style.background = "red";
         keyBtn.style.color = "white";
+        const hangmanParts = ["h-head", "h-body", "h-left-arm", "h-right-arm", "h-left-leg", "h-right-leg"];
+
+    function updateHangman() {
+        if (wrongGuesses <= hangmanParts.length) {
+            document.getElementById(hangmanParts[wrongGuesses - 1]).style.display = "block";
+    }
+
     }
     keyBtn.disabled = true;
 
@@ -183,11 +206,11 @@ function checkResult() {
     if (allRevealed) {
         disableKeyboardTyping();
         logResult("win");
-        resultDiv.innerHTML = "<p>🎉 You win! The word was: " + currentWord + "</p><button onclick='resetGame()'>Play Again</button>";
+        resultDiv.innerHTML = "<p>You win! The word was: " + currentWord + "</p><button onclick='resetGame()'>Play Again</button>";
     } else if (guessesLeft <= 0) {
         disableKeyboardTyping();
         logResult("loss");
-        resultDiv.innerHTML = "<p>💀 You lose! The word was: " + currentWord + "</p><button onclick='resetGame()'>Play Again</button>";
+        resultDiv.innerHTML = "<p>You lose! The word was: " + currentWord + "</p><button onclick='resetGame()'>Play Again</button>";
     } else {
         resultDiv.innerHTML = "<p>Guesses left: " + guessesLeft + "</p>";
     }
