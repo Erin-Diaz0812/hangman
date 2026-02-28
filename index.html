@@ -4,6 +4,152 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hangman - HackUSU 2026</title>
+
+<style>
+    /* Base */
+    body {
+        font-family: Georgia, serif;
+        background-color: #f0f4f8;
+        color: #3a3a3a;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Hero */
+    #hero {
+        text-align: center;
+        padding: 80px 20px;
+    }
+
+    #hero h1 {
+        font-size: 3rem;
+        color: #5b7fa6;
+        margin-bottom: 16px;
+    }
+
+    #hero p {
+        font-size: 1.1rem;
+        color: #6b7280;
+        margin-bottom: 32px;
+    }
+
+    /* Buttons */
+    button {
+        background-color: #5b7fa6;
+        color: white;
+        border: none;
+        padding: 12px 28px;
+        border-radius: 24px;
+        font-size: 1rem;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: #4a6d93;
+    }
+
+    /* Game area */
+    #game {
+        max-width: 700px;
+        margin: 40px auto;
+        padding: 0 20px;
+    }
+
+    /* Setup panel */
+    #setup {
+        background: white;
+        border-radius: 16px;
+        padding: 32px;
+        box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    #setup label {
+        font-weight: bold;
+        color: #5b7fa6;
+        font-size: 0.95rem;
+    }
+
+    #setup select, #setup input {
+        width: 100%;
+        padding: 10px 14px;
+        border: 2px solid #d1dce8;
+        border-radius: 10px;
+        font-size: 1rem;
+        background: #f7f9fc;
+        color: #3a3a3a;
+        margin-top: 4px;
+    }
+
+    #setup select:focus, #setup input:focus {
+        outline: none;
+        border-color: #5b7fa6;
+    }
+
+    /* Board */
+    #board {
+        background: white;
+        border-radius: 16px;
+        padding: 32px;
+        box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    /* Word blanks */
+    #word-display {
+        margin-top: 24px;
+        font-size: 2rem;
+        letter-spacing: 8px;
+        color: #5b7fa6;
+        font-weight: bold;
+    }
+
+    /* Keyboard */
+    #keyboard {
+        background: white;
+        border-radius: 16px;
+        padding: 24px;
+        box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    #keyboard button {
+        width: 44px;
+        height: 44px;
+        padding: 0;
+        border-radius: 10px;
+        font-size: 1rem;
+        background-color: #e8eef5;
+        color: #3a3a3a;
+        border: 2px solid #d1dce8;
+        text-transform: uppercase;
+    }
+
+    #keyboard button:hover:not(:disabled) {
+        background-color: #5b7fa6;
+        color: white;
+        border-color: #5b7fa6;
+    }
+
+    #keyboard button:disabled {
+        cursor: default;
+    }
+
+    /* Result */
+    #result {
+        text-align: center;
+        font-size: 1.2rem;
+        padding: 16px;
+        color: #3a3a3a;
+    }
+</style>
 </head>
 <body>
 
@@ -17,7 +163,7 @@
 
 
 
-<div id="game" style="display: none; background: lightblue;">
+<div id="game" style="display: none;">
     <!-- Game section-->
      <div id="setup">
         <label for="category"> Category: </label>
