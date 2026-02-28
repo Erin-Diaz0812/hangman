@@ -53,3 +53,7 @@ cufflinks,clothing,10,0,False,"['a', 'e', 'i', 'o', 'u', 'y', 'g', 'm', 'k', 'p'
 dashiki,foreign word,10,0,False,"['a', 'e', 'i', 'o', 'u', 's', 'k', 'm', 'q', 'p', 'n', 't', 'w', 'h', 'l']"
 babirusa,animal,10,0,False,"['a', 'e', 'i', 'o', 'u', 'm', 'n', 't', 'p', 'q', 'r', 'c', 'k', 'w']"
 gelato,,7,3,True,"['a', 'e', 'i', 'o', 'u', 'k', 'm', 'n', 't', 'c', 'b', 'l', 'g']"
+mousse,dessert,6,4,True,"['a', 'e', 'ai', 'i', 'o', 'u', 'y', 'z', 'g', 'm', 's']"
+tycoon,,10,0,False,"['a', 'e', 'i', 'o', 'u', 'y', 'm', 'z', 'g', 'k', 'l', 'p']"
+cobbler,dessert,10,0,False,"['a', 'e', 'io', 'i', 'o', 'u', 's', 'm', 't', 'n', 'p', 'r', 'y']"
+croissant,,10,0,False,"['a', 'e', 'i', 'o', 'u', 'z', 'y', 'm', 'n', 'p', 'k', 'q', 'r', 'b', 'h']"
