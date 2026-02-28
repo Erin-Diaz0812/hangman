@@ -16,7 +16,7 @@ def log_game_results(chosen_word, category, guesses_used, guess_count, won, gues
 
 df = pd.read_csv('hangman_word_list.csv')
 
-print(df)
+#print(df) commenting out dataframe to make terminal more manageable
 
 #just me seeing if the base loop works. This is randomly selecting from the ENTIRE list
 # chosen_word = df['word'].sample(1).values[0] #df['word'] = grab word column; sample(1) = pick a random row; value[0] = extraction to plain string
@@ -83,7 +83,6 @@ if chosen_category:
         (filtered_df['sub-category'] == chosen_category)
     ]
 
-
 chosen_word = filtered_df['word'].sample(1).values[0]
 print(chosen_category) #figure out a way to print out category if they reject customizing the game; this will have to be a DF thing
 print(guess_count)
@@ -101,6 +100,7 @@ banned_letters = []
 guessed_letters = []
 play_again = True
 
+
 while guess_count > 0 and '_' in display:
     guess_letter = input("Enter a letter to guess with: ").lower().strip()
     while not len(guess_letter) == 1:
@@ -113,7 +113,9 @@ while guess_count > 0 and '_' in display:
         print("Unfortunately, you've already guessed that letter.")
         continue
 
+
     guessed_letters.append(guess_letter)
+
 
     good_guess = False
     for spot in range(len(chosen_word)):
@@ -135,7 +137,6 @@ while guess_count > 0 and '_' in display:
         print("There are now: ", guess_count, "guesses remaining")
         banned_letters.append(guess_letter)
         print("Banned (incorrect) letters are: ", *banned_letters)
-
 
 
 guesses_used = attempts_left - guess_count

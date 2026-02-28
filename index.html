@@ -12,13 +12,38 @@
 
     <p>The purpose behind this website is to act as my project for the HackUSU event in 2026.</p>
 
-    <button onclick="startGame()"> Would you like to start playing? </button>
+    <button onclick="showGame()"> Would you like to start playing? </button>
 </div>
 
 
 
-<div id="game" style="display: none;">
+<div id="game" style="display: none; background: lightblue;">
     <!-- Game section-->
+     <div id="setup">
+        <label for="category"> Category: </label>
+        <select id="category">
+            <option value="all"> Random </option>
+            <option value="animal"> Animal </option>
+            <option value="dessert"> dessert </option>
+            <option value="clothing"> clothing </option>
+            <option value="vehicles"> vehicles </option>
+            <option value="foreign word"> foreign word </option>
+        </select>
+
+        <label for="wordLength"> Word Length: </label>
+        <input type="number" id="wordLength" placeholder="Any">
+
+        <label for="guessCount"> Guess Count: </label>
+        <input type="number" id="guessCount" placeholder="6">
+
+        <button onclick="startGame()">Start Game</button>
+        <!--set up: category, word length, guess count, start game button--> 
+    </div>
+
+     <div id="board"> <!-- drawing +  word blanks --> </div>
+     <div id="keyboard"> <!--letter boards --> </div>
+     <div id="result"> <!-- words --> </div>
+
 </div>
 
 
@@ -30,11 +55,15 @@
 
 
 <script>
+    function showGame() {
+        document.getElementById("hero").style.display = "none";
+        document.getElementById("game").style.display = "block";
+    }
+
     function startGame() {
-      document.getElementById("hero").style.display = "none";
-      document.getElementById("game").style.display = "block";
+        // This will handle word selection and game logic later
+        alert("Starting game!");
     }
 </script>
-
 </body>
 </html>
