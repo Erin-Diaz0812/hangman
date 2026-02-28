@@ -47,3 +47,7 @@ waistcoat,clothing,9,1,True,"['a', 'e', 'i', 'o', 'u', 'j', 'm', 'n', 'k', 'p', 
 lynx,animal,5,5,True,"['a', 'e', 'i', 'o', 'u', 'y', 'l', 'n', 'x']"
 gesundheit,foreign word,2,8,True,"['a', 'e', 'i', 'o', 'u', 'g', 's', 'n', 'd', 'h', 't']"
 safari,,10,0,False,"['a', 'e', 'i', 'o', 'u', 'x', 'y', 'z', 'g', 'm', 'n', 'q']"
+capybara,,10,0,False,"['a', 'e', 'i', 'o', 'u', 'g', 'h', 'p', 'r', 's', 'd', 'f', 'j']"
+mousse,dessert,7,3,True,"['a', 'e', 'i', 'o', 'u', 'p', 'q', 'z', 'l', 'k', 'm', 's']"
+cufflinks,clothing,10,0,False,"['a', 'e', 'i', 'o', 'u', 'y', 'g', 'm', 'k', 'p', 'r', 'q', 'c', 't']"
+dashiki,foreign word,10,0,False,"['a', 'e', 'i', 'o', 'u', 's', 'k', 'm', 'q', 'p', 'n', 't', 'w', 'h', 'l']"
