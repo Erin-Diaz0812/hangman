@@ -34,7 +34,7 @@
         <input type="number" id="wordLength" placeholder="Any">
 
         <label for="guessCount"> Guess Count: </label>
-        <input type="number" id="guessCount" placeholder="6">
+        <input type="number" id="guessCount" placeholder="10">
 
         <button onclick="startGame()">Start Game</button>
         <!--set up: category, word length, guess count, start game button--> 
@@ -55,15 +55,31 @@
 
 
 <script>
+const wordList = [
+  { word: "axolotl", category: "animal", length: 7 },
+  { word: "fox", category: "animal", length: 3 },
+  { word: "shark", category: "animal", length: 5 },
+  { word: "cheesecake", category: "dessert", length: 10 },
+  { word: "cookie", category: "dessert", length: 6 },
+  { word: "jacket", category: "clothing", length: 6 },
+  { word: "pants", category: "clothing", length: 5 },
+  { word: "sedan", category: "vehicles", length: 5 },
+  { word: "origami", category: "foreign word", length: 7 },
+  { word: "sushi", category: "foreign word", length: 5 },
+];
+
     function showGame() {
         document.getElementById("hero").style.display = "none";
         document.getElementById("game").style.display = "block";
     }
 
     function startGame() {
-        // This will handle word selection and game logic later
-        alert("Starting game!");
-    }
+    const category = document.getElementById("category").value;
+    const wordLength = document.getElementById("wordLength").value;
+    const guessCount = document.getElementById("guessCount").value || 10;
+
+    alert("Category: " + category + ", Length: " + wordLength + ", Guesses: " + guessCount);
+}
 </script>
 </body>
 </html>
