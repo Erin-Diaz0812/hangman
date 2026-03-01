@@ -1,6 +1,18 @@
 # hangman
 HackUSU midterm project for two classes
 
+round4.py = python terminal version of Hangman this is playable
+index.html = website version (html, css, javascript) of Hangman - this is playable (click on settings > pages > visit site or use this link: https://erin-diaz0812.github.io/hangman/)
+hangman_word_list.csv = the word list used in both round4.py and index.html
+
+game_results.csv = when a game is completed in round4.py it's saved here
+explode_game_results.py = splits up the wrong cell letter guess in game_results.csv to allow for data visualization and analysis
+game_results_exploded.csv = the saved exploded result of explode_game_results.py
+
+
+
+
+
 Currently doing most work in help.py but will need to swap over to hangman.py because help has a random word generator which prevents a lot of flexibility in the future (difficulty in terms of word being common, show definition at the end of game, category).
 
 
@@ -90,3 +102,6 @@ Today is going to be intensive website day! apparently a lot of javascript will 
 
 Note to claude about filtering the word length:
 I will say, would it be possible to update the word length to be a range of values (3-5, 6-8, 9-11 or something) or would that be too much detail that it isn't going to be worth it. In which case, maybe it'll be best to create a hard range (3 to 11 letters) so no one can surpass that range (unless that'll be a later endeavor). A note is that this will need to be presented in about 16 hours but I probably only have about 10 hours of productivity left realistically
+
+2/28:
+finsihed everything, presented for judging and recorded both videos for the classes' midterms. So now I'll be doing a bit of clean up, I think this will mainly be me deleting a decent chunk of the readme and deleting the previous iterations of the python game. I'll also write at the top of the read me more information about the file structure to everything, so graders/TA's know better about how everything is laid out and is supposed to do.
