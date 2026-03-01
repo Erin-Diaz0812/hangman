@@ -73,3 +73,4 @@ motorcycle,vehicles,6,4,True,"['a', 'e', 'i', 'o', 'u', 'm', 'n', 'k', 't', 'f',
 rendezvous,,10,0,False,"['a', 'e', 'i', 'o', 'u', 't', 'm', 'n', 'k', 'l', 'p', 'w', 'r', 'y', 'z', 'x']"
 motorcycle,,7,3,True,"['a', 'e', 'i', 'o', 'u', 'c', 'b', 'l', 'r', 'd', 'f', 'm', 'n', 'y', 't']"
 pudding,,6,4,True,"['b', 'a', 'e', 'i', 'o', 'u', 'n', 'g', 't', 'h', 'd', 'p']"
+babirusa,,10,0,False,"['a', 'e', 'i', 'o', 'u', 'z', 'q', 'w', 'r', 'y', 'p', 'm', 't', 's', 'd']"
